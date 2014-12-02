@@ -3,12 +3,23 @@ package com.capco.spring.intro.entity;
 public class Customer {
 
 	private Long id;
-	
+
 	private String firstName;
-	
-	private String secondName;
-	
+
+	private String lastName;
+
 	private String address;
+
+	public Customer() {
+	}
+
+	public Customer(Long id, String firstName, String lastName, String address) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+	}
 
 	public Long getId() {
 		return id;
@@ -26,12 +37,12 @@ public class Customer {
 		this.firstName = firstName;
 	}
 
-	public String getSecondName() {
-		return secondName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setSecondName(String secondName) {
-		this.secondName = secondName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getAddress() {
@@ -41,5 +52,5 @@ public class Customer {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+
 }

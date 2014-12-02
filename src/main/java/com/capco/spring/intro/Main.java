@@ -10,11 +10,12 @@ public class Main {
 	
 	public static void main(String[] args) {
 		//TODO: 
-		// 1. Create application context
-		// 2. wire beans all together
-		// 3. post construct / init
-		// 4. autowired annotation / Inject
-		// 5. component scan
-		// 6. Properties
+		// - Create application context
+		// - wire beans all together in xml
+		// - lookup prototype
+		// - post construct / init
+		// - spring annotation
+		// - component scan
+		// - Properties
 	}
 }
