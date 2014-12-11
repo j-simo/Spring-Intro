@@ -1,5 +1,8 @@
 package com.capco.spring.intro.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Customer {
 
 	private Long id;
@@ -7,7 +10,6 @@ public class Customer {
 	private String firstName;
 
 	private String lastName;
-
 	private String address;
 
 	public Customer() {
@@ -51,6 +53,11 @@ public class Customer {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + "]";
 	}
 
 }
